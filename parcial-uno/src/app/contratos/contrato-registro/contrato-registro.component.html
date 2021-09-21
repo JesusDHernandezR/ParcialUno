@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Registro de contratos</h2>
+            <form>
+                <div class="form-group">
+                    <label>IdContrato</label>
+                    <input type="text" name="idContrato" [(ngModel)]="contrato.idContrato"
+                        class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>TipoSuministro</label>
+                    <input type="text" name="tipoSuministro" [(ngModel)]="contrato.tipoSuministro" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>ValorContrato</label>
+                    <input type="text" name="valorContrato" [(ngModel)]="contrato.valorContrato" class="form-control" />
+                </div>    
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1"(click)="add()">Registrar</button>
+                    <button class="btn btn-secondary" type="reset">Cancelar</button>
+                    </div>            
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-6">
+        <input [(ngModel)]="searchText" type="text" class="formcontrol" placeholder="Type to filter">
+    </div>
+</div>
+<hr>
+<table class="table table-striped" *ngIf='contratosArray && contratosArray.length'>
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">ID</th>
+            <th scope="col">TIPO </th>
+            <th scope="col">VALOR</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let contrato of contratosArray; index as i ">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ contrato.idContrato }} </td>
+            <td>{{ contrato.tipoSuministro }}</td>
+            <td>{{contrato.valorContrato }}</td>
+        </tr>
+    </tbody>
+</table>
