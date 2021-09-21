@@ -13,7 +13,7 @@ export class ContratoService {
   }
   post(contrato: Contrato) {
     let contratosArray: Contrato[] = [];
-    if (this.get() != null) {
+    if (this.get() == null) {
       contratosArray = this.get();
     }
     contratosArray.push(contrato);

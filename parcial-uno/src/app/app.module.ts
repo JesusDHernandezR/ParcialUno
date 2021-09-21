@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ContratoConsultaComponent } from './contratos/contrato-consulta/contrato-consulta.component';
 import { ContratoRegistroComponent } from './contratos/contrato-registro/contrato-registro.component';
 import { ContratoService } from './services/contrato.service';
+import { InsumoRegistroComponent } from './contratos/insumo-registro/insumo-registro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContratoConsultaComponent,
-    ContratoRegistroComponent
+    ContratoRegistroComponent,
+    InsumoRegistroComponent
   ],
   imports: [
     BrowserModule,

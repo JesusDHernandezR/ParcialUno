@@ -8,10 +8,10 @@ import { Contrato } from '../models/contrato';
   styleUrls: ['./contrato-registro.component.css']
 })
 export class ContratoRegistroComponent implements OnInit {
-  contrato!: Contrato;
+  contrato: Contrato = new Contrato;
   
   constructor(private contratoService:ContratoService) {
-    
+    contrato: Contrato;
    }
 
   ngOnInit() {

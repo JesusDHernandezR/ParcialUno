@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { NgModule,Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContratoConsultaComponent } from './contratos/contrato-consulta/contrato-consulta.component';
 import { ContratoRegistroComponent } from './contratos/contrato-registro/contrato-registro.component';

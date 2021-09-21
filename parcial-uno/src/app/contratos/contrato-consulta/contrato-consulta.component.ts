@@ -9,7 +9,7 @@ import { Contrato } from '../models/contrato';
 })
 export class ContratoConsultaComponent implements OnInit {
   contratosArray:Contrato[]=[];
-  searchText:string='';
+  searchText:string="";
   constructor(private contratoService:ContratoService) { 
     
   }
